@@ -48,10 +48,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-.hide {
-  display: none !important;
-}
-
 main {
   display: flex;
   align-items: center;
@@ -98,6 +94,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .avatar {
@@ -141,6 +138,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  z-index: 30;
 }
 
 .btn svg {
@@ -152,6 +151,17 @@ main {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  position: absolute;
+  background-color: #48556a;
+  padding: 2.9rem;
+
+  padding: 1.8rem 3.7rem;
+  border-radius: 1rem;
+
+  right: -50px;
+  top: -70px;
+
+  z-index: 10;
 }
 
 .share-container p {
@@ -206,4 +216,8 @@ main {
     right: -50px;
     top: -70px;
   }
+}
+
+.hide {
+  display: none !important;
 }
